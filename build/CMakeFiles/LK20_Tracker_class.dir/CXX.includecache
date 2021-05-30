@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stavrow/Git/new/inv_LK/src/LK20_class.cpp
+LK20_class.hpp
+/home/stavrow/Git/new/inv_LK/src/LK20_class.hpp
+
+/home/stavrow/Git/new/inv_LK/src/LK20_class.hpp
+iostream
+-
+opencv2/opencv.hpp
+-
+vector
+-
+
+/home/stavrow/Git/new/inv_LK/src/LK_class_example.cpp
+iostream
+-
+chrono
+-
+LK_class_example.hpp
+/home/stavrow/Git/new/inv_LK/src/LK_class_example.hpp
+LK20_class.hpp
+/home/stavrow/Git/new/inv_LK/src/LK20_class.hpp
+
+/home/stavrow/Git/new/inv_LK/src/LK_class_example.hpp
+opencv2/opencv.hpp
+-
+

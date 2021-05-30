@@ -1,0 +1,4 @@
+/home/stavrow/Git/new/inv_LK/build/CMakeFiles/rebuild_cache.dir
+/home/stavrow/Git/new/inv_LK/build/CMakeFiles/edit_cache.dir
+/home/stavrow/Git/new/inv_LK/build/CMakeFiles/LK20_Tracker.dir
+/home/stavrow/Git/new/inv_LK/build/CMakeFiles/LK20_Tracker_class.dir

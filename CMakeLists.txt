@@ -1,0 +1,42 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(LK20-Framework)
+
+IF (!APPLE)
+  set(CMAKE_CXX_COMPILER g++)
+ENDIF()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O2")
+
+# set(OpenCV_DIR ~/.local/OpenCV/lib/cmake/opencv4)
+find_package(OpenCV 3.2.0 REQUIRED)
+IF (OpenCV_FOUND)
+  message([message] OpenCV_VER:${OpenCV_VERSION})
+  include_directories(${OpenCV_INCLUDE_DIRS})
+  link_directories(${OpenCV_LIBRARY_DIRS})
+  add_definitions(${OpenCV_DEFINITIONS})
+ENDIF()
+
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+add_executable(
+  LK20_Tracker
+  ./src/LK_example.cpp
+  ./src/LK20.cpp
+  )
+
+add_executable(
+  LK20_Tracker_class
+  ./src/LK_class_example.cpp
+  ./src/LK20_class.cpp
+  )
+
+target_link_libraries(
+  LK20_Tracker
+  ${OpenCV_LIBS}
+  )
+
+target_link_libraries(
+  LK20_Tracker_class
+  ${OpenCV_LIBS}
+  )
